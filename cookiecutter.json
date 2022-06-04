@@ -1,0 +1,8 @@
+{
+    "project_title": "Cookiecutter Personal",
+    "project_slug": "{{cookiecutter.project_title.lower().replace(' ','_').replace('-','_')}}", 
+    "project_description": "Tu primer proyecto con Cookiecutter",
+    "project_author_name": "thomquam",
+    "project_packages": ["All", "Minimal"],
+    "python_version": "3.7"
+}
