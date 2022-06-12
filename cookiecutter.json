@@ -1,8 +1,12 @@
 {
     "project_title": "Cookiecutter Personal",
-    "project_slug": "{{cookiecutter.project_title.lower().replace(' ','_').replace('-','_')}}", 
+    "project_slug": "{{cookiecutter.project_title.lower().replace(' ','_').replace('-','_')}}",
+    "project_module_name":"{{cookiecutter.project_slug}}",
     "project_description": "Tu primer proyecto con Cookiecutter",
     "project_author_name": "thomquam",
+    "project_autor_email": "thomquam@gmail.com",
+    "project_open_source_license":["No License file","MIT","BSD-3-Clause"],
     "project_packages": ["All", "Minimal"],
-    "python_version": "3.7"
+    "python_version": "3.7",
+    "project_version":"0.1.0"
 }
