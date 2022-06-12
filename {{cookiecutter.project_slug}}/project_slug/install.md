@@ -25,7 +25,7 @@ The packages necessary to run the project are now installed inside the conda env
 
 ## Set up project's module
 
-To move beyond notebook prototyping, all reusable code should go into the `module_name_proy/` folder package. To use that package inside your project, install the project's module in editable mode, so you can edit files in the `module_name_proy` folder and use the modules inside your notebooks :
+To move beyond notebook prototyping, all reusable code should go into the `{{cookiecutter.project_module_name}}/` folder package. To use that package inside your project, install the project's module in editable mode, so you can edit files in the `{{cookiecutter.project_module_name}}` folder and use the modules inside your notebooks :
 
 ```bash
 pip install --editable .

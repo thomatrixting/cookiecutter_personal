@@ -1,6 +1,6 @@
 # project_title
 
-description
+{{cookiecutter.project_description}}
   
 ## Installation guide
 

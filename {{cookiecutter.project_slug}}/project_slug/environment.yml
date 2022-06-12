@@ -1,34 +1,33 @@
 # conda env create --file environment.yml
 # mamba env create --file environment.yml
-name: project_slug
+name: {{cookiecutter.project_slug}}
 channels:
   - anaconda
   - conda-forge
   - defaults
 dependencies:
+{% if cookiecutter.project_packages == "All" %}
   - black
   - invoke
   - jupyter
   - jupyterlab
   - keras
   - lightgbm
-  - matplotlib
   - missingno
   - nbdime
-  - numpy
-  - pandas
   - pandas-flavor
   - pandas-profiling
-  - pip
   - plotly
   - pyjanitor
   - pylint
   - pyprojroot
   - pyspark
-  - python=3.9
   - python-dotenv
-  - scikit-learn
-  - seaborn
   - statsmodels
   - tensorflow
-  
+{%endif -%}  
+  - scikit-learn
+  - seaborn
+  - python={{cookiecutter.python_version}}
+  - pip
+  - pandas

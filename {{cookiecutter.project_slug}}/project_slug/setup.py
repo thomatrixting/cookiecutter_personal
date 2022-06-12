@@ -18,13 +18,13 @@ def readme() -> str:
     return open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 setup(
-    name='module_name_proy',
-    version='0.1.0',
-    author='my_name',
-    author_email='ail',
-    description='description',
+    name='{{cookiecutter.project_module_name}}',
+    version='{{cookiecutter.project_version}}',
+    author='{{cookiecutter.project_author_name}}',
+    author_email='{{cookiecutter.project_autor_email}}',
+    description='{{cookiecutter.project_description}}',
     python_requires='>=3',
-    license='',
+    license='{{cookiecutter.project_open_source_license}}',
     url='',
     packages=find_packages(),
     long_description=readme(),
